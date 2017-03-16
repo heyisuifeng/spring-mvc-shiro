@@ -11,7 +11,5 @@ import java.util.List;
 @Service
 public class RoleService {
 
-    public List<Role> getRolesByUserName(String userName){
-        return null;
-    }
+
 }

@@ -16,9 +16,8 @@
     <!-- Shiro Filter -->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
-        <property name="loginUrl" value="/login.jsp"/>
-        <property name="successUrl" value="/jsp/home.jsp"/>
-        <property name="unauthorizedUrl" value="/error/unauthorized.jsp"/>
+        <!--登录页面的请求地址-->
+        <property name="loginUrl" value="/login"/>
         <property name="filterChainDefinitions">
             <value>
                 /assets/** = anon
@@ -31,7 +30,7 @@
 
     <!--配置缓存管理器-->
     <bean id="shiroEhcacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
-        <property name="cacheManagerConfigFile" value="classpath:conf/ehcache-shiro.xml"/>
+        <property name="cacheManagerConfigFile" value="classpath:shiroConfig/ehcache-shiro.xml"/>
     </bean>
 
     <!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
