@@ -39,7 +39,7 @@ public class LoginController {
     @RequestMapping(value = "/login",method = RequestMethod.GET)
     public String login(HttpSession session){
         //spring基于session的国际化
-        session.setAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME,new Locale("zh_CN"));
+        session.setAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME,new Locale("en"));
         return "login";
     }
 

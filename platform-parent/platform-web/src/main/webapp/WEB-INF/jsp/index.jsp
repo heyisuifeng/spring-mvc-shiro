@@ -12,7 +12,6 @@
 <body class="page-header-fixed page-quick-sidebar-over-content">
 <%@include file="includes/top.jsp" %>
 <div class="page-container">
-    <%@include file="includes/sidebar.jsp" %>
     <!-- BEGIN CONTENT -->
     <div class="page-content-wrapper">
         <div class="page-content">

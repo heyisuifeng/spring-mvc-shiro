@@ -29,7 +29,7 @@ public class UserRepository {
 
             public User mapRow(ResultSet resultSet, int i) throws SQLException{
                 User u = new User();
-                u.setUserId(resultSet.getInt("id"));
+                u.setUserId(resultSet.getInt("user_id"));
                 u.setUsername(resultSet.getString("username"));
                 u.setNickname(resultSet.getString("nickname"));
                 u.setPassword(resultSet.getString("password"));
