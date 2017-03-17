@@ -21,6 +21,9 @@
         <property name="filterChainDefinitions">
             <value>
                 /assets/** = anon
+                /css/** = anon
+                /img/** = anon
+                /js/** = anon
                 /login = anon
                 /logout = logout
                 /** = user

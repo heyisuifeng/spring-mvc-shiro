@@ -52,7 +52,8 @@ public class LoginController {
         try {
             currentUser.login(token);
             if (currentUser.isAuthenticated()){
-                return "redirect:/";
+                sessionHandle(user,request);
+                return "redirect:"+getSavedUrl(request);
             }
         } catch (IncorrectCredentialsException e) {
             msg = "登录密码错误. Password for account " + token.getPrincipal() + " was incorrect.";
@@ -93,6 +94,6 @@ public class LoginController {
     private void sessionHandle(User user, HttpServletRequest request) {
         User loginUser = userService.getUserByUsername(user.getUsername());
         HttpSessionUtil.saveUserToSession(loginUser, request);
-        menuService.updateMenuInHttpSession(request);
+        //menuService.updateMenuInHttpSession(request);
     }
 }

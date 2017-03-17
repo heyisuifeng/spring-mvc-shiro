@@ -38,6 +38,7 @@
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-cache:1.4.0-RC2" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-lang:1.4.0-RC2" />
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.6.11" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.38" />
         </element>
       </element>

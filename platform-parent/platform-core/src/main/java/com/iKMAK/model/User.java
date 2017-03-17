@@ -12,6 +12,7 @@ public class User {
     private int userId;
     @NotBlank(message = "{user.username.NotBlank}")
     private String username;
+    private String nickname;
     private String password;
     private boolean rememberMe;
     private List<Role> roleList;
@@ -30,6 +31,14 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public String getPassword() {

@@ -30,7 +30,7 @@
     <!--国际化配置-->
     <bean id="messageSource"
           class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-        <property name="basename" value="ViewMessages.ViewMessages"/>
+        <property name="basename" value="18in.ViewMessages"/>
         <property name="useCodeAsDefaultMessage" value="true"/>
     </bean>
     <bean id="localeResolver"
