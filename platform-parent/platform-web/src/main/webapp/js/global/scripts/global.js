@@ -46,7 +46,6 @@ $(function () {
             toastr.error(i18n["tableWrong"]);
         }
     });
-    $.validator.messages.equalTo=i18n["diffInput"];
     $("#menu_" + $("#menuParentId").val()).addClass("active").find("span.arrow").addClass("open");
     $("#menu_" + $("#menuId").val()).addClass("active");
     var $menuSearch = $("#menuSearch").on("keydown",function(e){
@@ -104,7 +103,7 @@ var customGlobal = {
         $("#"+dialogId).find("input:text,input:password,select,textarea").val("").end().modal("show").find("div.form-group").removeClass("has-error");
     },
     menuSearch:function(menuId){
-        $.post("develop/menu/menuSearch",{menuId:menuId},function(data){
+        $.post("development/menu/menuSearch",{menuId:menuId},function(data){
             if (customGlobal.ajaxCallback(data)) {
                 location.href = data.returnData.url;
             }

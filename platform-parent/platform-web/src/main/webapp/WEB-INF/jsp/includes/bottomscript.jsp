@@ -28,6 +28,7 @@
 <script src="<c:url value="/js/global/scripts/util.js"/>" type="text/javascript"></script>
 <script src="<c:url value="/js/global/scripts/toast.js"/>"></script>
 <script src="<c:url value="/js/global/plugins/autoComplete/autoComplete.js"/>"></script>
+<script src="<c:url value="/js/bower_components/jquery-ui/ui/i18n/jquery.i18n.properties-1.0.9.js"/>"></script>
 <%--js i18n--%>
 <%
     if("zh".equals(session.getAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME))){
