@@ -9,6 +9,7 @@ var Login = function () {
         }
     }
 
+
     var handleLogin = function() {
         $('.login-form').validate({
             rules: {
@@ -22,10 +23,10 @@ var Login = function () {
 
             messages: {
                 username: {
-                    required: i18n['usernameRequired']
+                    required: $.i18n.prop().name
                 },
                 password: {
-                    required: i18n['passwordRequired']
+                    required: $.i18n.prop().name
                 }
             },
 

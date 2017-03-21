@@ -57,5 +57,5 @@
         <property name="maxInMemorySize" value="40960"/>
     </bean>-->
 
-    <import resource="/shiroConfig/spring-shiro.xml"/>
+    <import resource="../shiroConfig/spring-shiro.xml"/>
 </beans>

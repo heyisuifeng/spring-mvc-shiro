@@ -60,10 +60,17 @@
 <script src="<c:url value="/js/bower_components/jquery-backstretch/jquery.backstretch.min.js"/>" type="text/javascript"></script>
 <script src="<c:url value="/js/login.js"/>" type="text/javascript"></script>
 <script>
+    var languageType = "<%=session.getAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME)%>";
     $(function(){
+        $.i18n.properties({
+            name:'ViewMessages_en',
+            path: '../i18n/',
+            mode:'map',
+            language:'en'
+        });
         Login.init();
         <c:if test="${message!=null}">
-        toast.error(i18n['loginError']);
+        toast.error($.i18n.prop());
         </c:if>
     })
 </script>
